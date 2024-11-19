@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet", href="portfolio.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navBar">
+            <div class="sectionName">
+               <h1><i>Avneesh Gupta</i></h1>
+            </div>
+            <div class="sectionLink">
+               <a href="#about">About</a>
+               <a href="#resumeSection">Resume</a>
+               <a href="#skillSection">Skills</a>
+               <a href="#projectSection">Projects</a>
+               <a href="#contactSection">Contacts</a>
+            </div>
+        </div>
+        <div class="right">
+
+            <div class="mainContent">
+                <section id="about">
+                    <div class="aboutSection">
+                        <div class="imageBox">
+                            <div class="shape">
+                                <img class="userimage" src="image/user.jpg" alt="image not found"><br>
+                            </div>
+                        </div>
+                        <div class="paraBox">
+                            <h1>About Me:</h1>
+                            <div class="para">
+                                <p>
+                                    "As a recent graduate with a passion for web development, I am experience loem34
+                                     lorem34 lorem7 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dignissimos, voluptatem voluptatibus reiciendis ullam saepe voluptate alias nam commodi odio ratione laborum ipsum obcaecati cumque natus totam fugiat dolorem consequuntur ut amet laudantium aperiam?" 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="resumeSection">
+                    <div class="Rbox">
+                        <h1>Resume</h1>
+                        <div class="edu">
+                            <h1>year:2022-2026</h1>
+                            <h2>Bachelor of Technology</h2>
+                            <h3>Shambhunath Institude of Enginnering Technology</h3>
+                            <p>Grade: First Divion</p>
+                        </div>
+                        <div class="edu">
+                            <h1>year: 2020-2022</h1>
+                            <h2>Intermediate</h2>
+                            <h3>Th.Satynarayan Chandrapratap singh Samrak inter collage</h3>
+                            <p>Grade:First Divison</p>
+                        </div>
+                    </div>
+                    <div class="Rbox">
+                        <div class="edu">
+                            <h1>year: 2018-2020</h1>
+                            <h2>Higher School</h2>
+                            <h3>Rashtriya Inter collage,Mayang</h3>
+                            <p>Grade:First Divison</p>
+                        </div>
+                        <div class="exp">
+                            <h1>Experience</h1>
+                            <h3>Fresher</h3>
+                        </div>
+                        <div class="lang">
+                            <h1>Web development</h1>
+                            <h2>Frontend</h2>
+                            <p>HTML,CSS,Javascript, React,Bootstrap</p>
+                            <h2>Back-End</h2>
+                            <p>Node.js,MongoDB, Experience,js</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="skillSection">
+                    <div class="skills">
+                        <h1>My skills</h1>
+                        <div class="skillbox">
+                            <div class="box1">
+                                <h1>Technical skills</h1>
+                                <div>
+                                    <h2>HTML</h2>
+                                    <progress value="60" max="100"></progress>
+                                    <h2>CSS</h2>
+                                    <progress value="60" max="100"></progress>
+                                    <h2>Javascript</h2>
+                                    <progress value="30" max="100"></progress>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <h1>Professional skills</h1>
+                                <div>
+                                    <h2>Problem solving</h2>
+                                    <progress value="70" max="100"></progress>
+                                    <h2>Communication</h2>
+                                    <progress value="50" max="100"></progress>
+                                    <h2>Self motivation</h2>
+                                    <progress value="80" max="100"></progress>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section id="projectSection">
+                    <div class="Pbox">
+                        <header>
+                            <h1>My project title</h1>
+                        </header>
+                        <div id="Pabout">
+                            <h3>About the Projects</h3>
+                            <p>This project is a demonstration of hoe to create a simple project using Page</p>
+                            <p>Technologies used:HTML,CSS Javacsript.</p>
+                        </div>
+                        <div class="project">
+                            <h2>Projects Gallery</h2>
+                            <div class="PPbox">
+                                <div class="projectBox">
+                                    <img src="image/Calculator img.png" alt="not found"></img>
+                                </div>
+                                <div class="projectBox">
+                                    <img src="image/Music img.png" alt="not found"></img>
+                                </div>
+                            </div>
+                            <div class="PPbox">
+                                <div class="projectBox">
+                                    <img src="image/amazon img.png" alt="not found"></img>
+                                </div>
+                                <div class="projectBox">
+                                    <img src="image/login img.png" alt="not found"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contactSection">
+                    <h2>Contact Me</h2>
+                    <p>If you do like to touch, feel to reach out via email at.<center><a href="https://drive.google.com/drive/my-drive">Download</a></center></p>
+                </section>
+                <div class="footer">
+                    <p>&copy; 2024 My Projects Page. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let section=document.querySelectorAll("section");
+        navLink = documnet.query.querySelectorAll('secionLink');
+        window.onscroll=()=>{
+            section.forEach(sec=>{
+                let top = window.scrolly;
+                let offset = sec.offsetTop-150;
+                let height=sec.offsetHeight;
+                let id=sec.getAttribute('id');
+                if(top.offset && top<offset + height){
+                    navLink.forEach(link=>{
+                        link.classList.remove('active')
+                        document.querySelector('sectionLink a[href='+id+']');
+                    })
+                }
+            })
+        }
+    </script>
+</body>
+</html>
